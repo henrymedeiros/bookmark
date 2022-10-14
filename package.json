@@ -1,0 +1,22 @@
+{
+  "name": "bookmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrymedeiros/bookmark.git"
+  },
+  "author": "Henry Medeiros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henrymedeiros/bookmark/issues"
+  },
+  "homepage": "https://github.com/henrymedeiros/bookmark#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}

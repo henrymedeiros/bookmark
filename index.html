@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="tailwind/output.css">
     <title>Frontend Mentor | Bookmark landing page</title>
 
     <style>
@@ -26,29 +26,41 @@
     </style>
   </head>
 
-  <body>
+  <body class='px-6 max-w-[1440px] mx-auto'>
     <!--Menu-->
     <header>
-      <nav>
-        <div id="logo" class="logo">Bookmark</div>
-        <ul>
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Contact</li>
-          <a href="#"><button>Login</button></a>
+      <nav class="flex justify-between items-center h-20">
+        <div id="logo" class="logo uppercase">Bookmark</div>
+        <ul class='hidden md:flex'>
+          <li class='px-4'>Features</li>
+          <li class='px-4'>Pricing</li>
+          <li class='px-4'>Contact</li>
+          <a href="#"><button class='px-4'>Login</button></a>
         </ul>
+        <div class='block md:hidden'> [=] </div>
+        <div class="absolute top-0 w-100 mobile-menu">
+          <li class='px-4'>Features</li>
+          <li class='px-4'>Pricing</li>
+          <li class='px-4'>Contact</li>
+          <a href="#"><button class='px-4'>Login</button></a>
+        </div>
       </nav>
     </header>
     <!--End Menu-->
 
     <!--Hero Section-->
     <section id="hero" class="hero">
-      <h1>A Simple Bookmark Manager</h1>
-      <p>
-        A clean and simple interface to organize your favourite websites. Open a
-        new browser tab and see your sites load instantly. Try it for free.
-      </p>
-      <button>Get it on Chrome</button><button>Get it on Firefox</button>
+      <div class="hero-content">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>
+          A clean and simple interface to organize your favourite websites. Open
+          a new browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <a href="#"><button>Get it on Chrome</button></a>
+        <a href="#"><button>Get it on Firefox</button></a>
+      </div>
+      <div class="hero-image">
+        <img src="./images/illustration-hero.svg" alt="hero image" />
     </section>
     <!-- End Hero -->
 
