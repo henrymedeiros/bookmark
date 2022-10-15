@@ -4,13 +4,37 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
+:root{
+    --soft-blue: hsl(231, 69%, 60%);
+    --soft-red: hsl(0, 94%, 66%);
+    --very-dark-blue: #252b46;
+    --grayish-blue: hsl(229, 8%, 60%);
+}
+
 html{
-    font-family: 'Rubik', sans-serif !important;
+    font-family: 'Rubik', sans-serif;
+}
+
+p{
+    font-weight: 500;
+    color: var(--grayish-blue) !important;
+}
+
+.tab.active-tab{
+    border-bottom: 4px solid var(--soft-red);
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.active-tab{
+    display: block !important;
 }
 
 .svg-container{
     width: 80%;
-    border: 1px dashed #aaa;
+    
     right: 0;
     z-index: -100;
     bottom: 0;
