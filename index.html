@@ -12,61 +12,85 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="tailwind/output.css">
+    
     <title>Frontend Mentor | Bookmark landing page</title>
 
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    
   </head>
 
-  <body class='px-6 max-w-[1440px] mx-auto'>
-    <!--Menu-->
-    <header>
-      <nav class="flex justify-between items-center h-20">
-        <div id="logo" class="logo uppercase">Bookmark</div>
+  <body class="text-center md:text-left">
+    <!--DESKTOP MENU-->
+    <header class="w-screen h-20 ">
+      <nav class="flex container mx-auto  justify-between h-full items-center px-6 md:px-0">
+        <a href="https://flowbite.com/" class="flex items-center  z-10 ">
+          <img src="./images/logo-bookmark.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+          
+      </a>
+      <div class="flex items-center md:hidden">
+        <button class="text-3xl font-bold opacity-70 hover:opacity-100 duration-300 z-10"
+            onclick="toggleMenu()">
+            &#9776;
+        </button>
+    </div>
         <ul class='hidden md:flex'>
           <li class='px-4'>Features</li>
           <li class='px-4'>Pricing</li>
           <li class='px-4'>Contact</li>
           <a href="#"><button class='px-4'>Login</button></a>
         </ul>
-        <div class='block md:hidden'> [=] </div>
-        <div class="absolute top-0 w-100 mobile-menu">
-          <li class='px-4'>Features</li>
-          <li class='px-4'>Pricing</li>
-          <li class='px-4'>Contact</li>
-          <a href="#"><button class='px-4'>Login</button></a>
-        </div>
       </nav>
+      <!-- END DESKTOP MENU -->
+      <!-- MOBILE MENU -->
+      <div id="mobileMenu" class=" hidden fixed top-0 w-screen h-screen bg-very-dark-blue bg-opacity-90 pt-20 text-center px-6 uppercase tracking-widest">
+        <ul>
+          <li class="py-4 border-y">Features</li>
+        <li class="py-4 border-y">Pricing</li>
+        <li class="py-4 border-y">Contact</li>
+        </ul>
+        
+        <button class="border  py-3 w-full">Login</button>
+        <div class="socials-mobile fixed bottom-10 flex">
+          <img src="./images/icon-facebook.svg" alt="facebook" class="mx-2">
+          <img src="./images/icon-twitter.svg" alt="twitter" class="mx-2">
+        </div>
+      </div>
+      <!-- END MOBILE MENU -->
     </header>
     <!--End Menu-->
 
     <!--Hero Section-->
-    <section id="hero" class="hero">
-      <div class="hero-content">
-        <h1>A Simple Bookmark Manager</h1>
-        <p>
+    <section id="hero" class="hero py-10 top-0 bottom-0 ">
+      
+      
+        
+      <div class="hero-image relative">
+        <img src="./images/illustration-hero.svg" alt="hero image" class="" />
+        <div class="svg-container absolute">
+          <svg width="265" height="137" viewBox="0 0 265 137" fill="none" xmlns="http://www.w3.org/2000/svg" class="mobile-hero-svg">
+            <path d="M0 0H265V137H68.5C30.6685 137 0 106.332 0 68.5V0Z" fill="#5368DF"/>
+            </svg>
+        </div>
+        </div>
+      <div class="hero-content text-center px-6">
+    
+        <h1 class='text-3xl font-medium my-5'>A Simple Bookmark Manager</h1>
+        <p class=" font-medium text-grayish-blue my-5">
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-        <a href="#"><button>Get it on Chrome</button></a>
-        <a href="#"><button>Get it on Firefox</button></a>
+        <div class="hero-buttons my-5 flex justify-between">
+          <a href="#"><button class="bg-soft-blue text-white rounded py-3 px-4">Get it on Chrome</button></a>
+        <a href="#"><button class="bg-grayish-blue rounded py-3 px-4">Get it on Firefox</button></a>
+        </div>
+        
       </div>
-      <div class="hero-image">
-        <img src="./images/illustration-hero.svg" alt="hero image" />
+      
     </section>
     <!-- End Hero -->
 
     <!-- Features -->
     <section>
-      <h2>Features</h2>
+      <h2 class="text-2xl">Features</h2>
       <p>
         Our aim is to make it quick and easy for you to access your favourite
         websites. Your bookmarks sync between your devices so you can access
@@ -213,5 +237,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
