@@ -1,3 +1,5 @@
+- Fix Accordion SVGs: [ ]
+- Fix Button on Hero: []
 - Desktop layout: [ ]
-- Add animations: [ ]
 - Fix SVGs: [ ]
+- Add animations: [ ]
