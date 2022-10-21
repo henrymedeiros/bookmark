@@ -15,21 +15,58 @@ html{
     font-family: 'Rubik', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 p{
     font-weight: 500;
     color: var(--grayish-blue) !important;
 }
 
-.tab.active-tab{
+#hero > div.hero-content.px-8.md\:px-0.md\:text-left > div > a:nth-child(2) > button{
+    background-color: rgb(247, 247, 247);
+    color: var(--very-dark-blue);
+}
+
+
+#mobileMenu > div{
+    justify-content: center;
+    width: calc(100% - 80px);
+}
+
+#menuLogo.on-dark > g > path{
+    fill: #fff;
+}
+
+#menuLogo.on-dark > g > g > path{
+    fill: var(--very-dark-blue);
+}
+
+#menuLogo.on-dark:nth-child(1) circle{
+    fill: #fff;
+}
+
+
+
+.tab{
+    cursor: pointer;
+}
+
+.tab.active{
     border-bottom: 4px solid var(--soft-red);
 }
 
-.tab-content{
+.tab-container{
     display: none;
 }
 
-.tab-content.active-tab{
-    display: block !important;
+.tab-container.active{
+    display: flex;
+}
+
+.accordion-header{
+    cursor: pointer;
 }
 
 .download-card{
@@ -73,19 +110,18 @@ p{
     cursor: pointer;
 }
 
-.svg-container{
-    width: 80%;
+
+.accordion-content{
+    display: none;
+}
+
+.accordion-content.active{
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 15px;
+    }
+}
     
-    right: 0;
-    z-index: -100;
-    bottom: 0;
-}
-
-.svg-container svg{
-    width: 100%;
-    height: 100%;
-}
-
-.hero-image{
-    height: max-content;
-}
