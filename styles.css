@@ -24,6 +24,53 @@ p{
     color: var(--grayish-blue) !important;
 }
 
+h1,h2,h3{
+    font-weight: 500;
+    color: var(--very-dark-blue);
+}
+
+.red-text-hover:hover{
+    color: var(--soft-red);
+}
+
+button.grey-btn{
+    background-color: #f7f7f7;
+    color: var(--very-dark-blue);
+    border: 2px solid transparent;
+}
+button.grey-btn:hover{
+    background-color: #f7f7f7;
+    color: var(--very-dark-blue);
+    border: 2px solid var(--very-dark-blue);
+}
+
+button.blue-btn{
+    background-color: var(--soft-blue);
+    color: #fff;
+    border: 2px solid transparent;
+}
+
+
+button.blue-btn:hover{
+    background-color: #fff;
+    color: var(--soft-blue);
+    border: 2px solid var(--soft-blue);;
+}
+
+button.red-btn:hover{
+    background-color: #fff;
+    color: var(--soft-red);
+    border: 2px solid var(--soft-red);;
+}
+
+a:hover{
+    color: var(--soft-red);
+}
+
+#hero{
+    height: calc(100vh - 80px);
+}
+
 #hero > div.hero-content.px-8.md\:px-0.md\:text-left > div > a:nth-child(2) > button{
     background-color: rgb(247, 247, 247);
     color: var(--very-dark-blue);
@@ -108,6 +155,7 @@ p{
     border: none;
     font-weight: 500;
     cursor: pointer;
+    border: 2px solid transparent
 }
 
 

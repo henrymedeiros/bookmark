@@ -77,7 +77,9 @@
             <a href="#contact">Contact</a>
           </li>
           <a href=""
-            ><button class="bg-soft-red text-white rounded ml-6 py-2 px-6">
+            ><button
+              class="bg-soft-red red-btn uppercase text-white rounded ml-6 py-2 px-6 drop-shadow-lg border-2 border-transparent hover:border-soft-red"
+            >
               Login
             </button></a
           >
@@ -110,72 +112,80 @@
     <!--Hero Section-->
     <section
       id="hero"
-      class="hero py-10 top-0 bottom-0 md:flex flex-row-reverse flex-1 container mx-auto"
+      class="hero py-10 top-0 bottom-0 flex flex-col-reverse justify-center md:grid container mx-auto md:grid-cols-2 md:py-0 md:justify-items-end md:gap-10 lg:gap-20"
     >
-      <div class="hero-image relative">
-        <img
-          src="./images/illustration-hero.svg"
-          alt="hero image"
-          class="z-0"
-        />
-      </div>
-      <div class="hero-content md:text-left">
-        <h1 class="text-3xl font-medium my-5 md:text-4xl">
+      <div
+        class="hero-content px-8 md:text-left md:flex md:flex-col md:justify-center"
+      >
+        <h1 class="text-3xl font-medium text-very-dark-blue my-5 md:text-6xl">
           A Simple Bookmark Manager
         </h1>
         <p class="font-medium text-grayish-blue my-6">
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-        <div
-          class="hero-buttons my-5 flex justify-between md:justify-start mr-4"
-        >
+        <div class="hero-buttons my-5">
           <a href="#"
             ><button
-              class="bg-soft-blue text-white rounded py-3 px-4 font-medium"
+              class="bg-soft-blue blue-btn text-white rounded mr-3 py-3 px-3 font-medium shadow-md"
             >
               Get it on Chrome
             </button></a
           >
           <a href="#"
-            ><button class="rounded py-3 px-4 font-medium">
+            ><button
+              class="grey-btn text-white rounded mr-3 py-3 px-3 font-medium shadow-md"
+            >
               Get it on Firefox
             </button></a
           >
         </div>
+      </div>
+      <div class="hero-image flex items-center w-full">
+        <img
+          src="./images/illustration-hero.svg"
+          alt="hero image"
+          class="z-0 w-full"
+        />
       </div>
     </section>
     <!-- End Hero -->
 
     <!-- Features -->
     <section id="features" class="mb-24 md:container mx-auto">
-      <h2 class="text-2xl font-medium my-6">Features</h2>
-      <p class="pt-4 pb-8 px-8">
+      <h2 class="text-2xl font-medium my-6 md:text-3xl">Features</h2>
+      <p class="pt-4 pb-8 px-8 md:max-w-2xl mx-auto">
         Our aim is to make it quick and easy for you to access your favourite
         websites. Your bookmarks sync between your devices so you can access
         them on the go.
       </p>
-      <div class="tabs">
+      <div class="tabs my-12">
         <ul class="tabs-header px-8 md:flex md:justify-center">
-          <li class="tab active py-3 border-b">
-            <span class="py-3 px-8">Simple Bookmarking</span>
+          <li
+            class="tab py-3 px-8 md:px-16 border-b hover:text-soft-red active"
+          >
+            Simple Bookmarking
           </li>
-          <li class="tab py-3 px-8 border-b">Speedy Searching</li>
-          <li class="tab py-3 px-8 border-b">Easy Sharing</li>
+          <li class="tab py-3 px-8 md:px-16 border-b hover:text-soft-red">
+            Speedy Searching
+          </li>
+          <li class="tab py-3 px-8 md:px-16 border-b hover:text-soft-red">
+            Easy Sharing
+          </li>
         </ul>
         <div
-          class="tab-container flex flex-col justify-center items-center text-center md:flex-row"
+          class="tab-container active flex flex-col justify-center items-center text-center md:flex-row md:gap-x-28"
         >
-          <div class="relative my-16 px-8">
+          <div class="relative my-16 px-8 flex-1">
             <img
               src="./images/illustration-features-tab-1.svg"
               alt="hero image"
-              class="z-0"
+              class="w-full"
             />
           </div>
-          <div class="tab-content md:text-left">
-            <h2 class="text-2xl font-medium my-6">Bookmark in one click 1</h2>
-            <p class="pt-4 pb-8 px-8 md:p-0">
+          <div class="tab-content md:text-left md:flex-1">
+            <h2 class="text-3xl font-medium my-6">Bookmark in one click 1</h2>
+            <p class="pt-4 pb-8 px-8 md:px-0">
               Organize your bookmarks however you like. Our simple drag-and-drop
               interface gives you complete control over how you manage your
               favourite sites.
@@ -186,18 +196,18 @@
           </div>
         </div>
         <div
-          class="tab-container active flex flex-col justify-center items-center text-center md:flex-row"
+          class="tab-container flex flex-col justify-center items-center text-center md:flex-row md:gap-x-28"
         >
-          <div class="relative my-16 px-8">
+          <div class="relative my-16 px-8 flex-1">
             <img
               src="./images/illustration-features-tab-1.svg"
               alt="hero image"
-              class="z-0"
+              class="w-full"
             />
           </div>
-          <div class="tab-content md:text-left">
-            <h2 class="text-2xl font-medium my-6">Bookmark in one click 2</h2>
-            <p class="pt-4 pb-8 px-8 md:p-0">
+          <div class="tab-content md:text-left md:flex-1">
+            <h2 class="text-3xl font-medium my-6">Bookmark in one click 2</h2>
+            <p class="pt-4 pb-8 px-8 md:px-0">
               Organize your bookmarks however you like. Our simple drag-and-drop
               interface gives you complete control over how you manage your
               favourite sites.
@@ -208,18 +218,18 @@
           </div>
         </div>
         <div
-          class="tab-container flex flex-col justify-center items-center text-center md:flex-row"
+          class="tab-container flex flex-col justify-center items-center text-center md:flex-row md:gap-x-28"
         >
-          <div class="relative my-16 px-8">
+          <div class="relative my-16 px-8 flex-1">
             <img
               src="./images/illustration-features-tab-1.svg"
               alt="hero image"
-              class="z-0"
+              class="w-full"
             />
           </div>
-          <div class="tab-content md:text-left">
-            <h2 class="text-2xl font-medium my-6">Bookmark in one click 3</h2>
-            <p class="pt-4 pb-8 px-8 md:p-0">
+          <div class="tab-content md:text-left md:flex-1">
+            <h2 class="text-3xl font-medium my-6">Bookmark in one click 3</h2>
+            <p class="pt-4 pb-8 px-8 md:px-0">
               Organize your bookmarks however you like. Our simple drag-and-drop
               interface gives you complete control over how you manage your
               favourite sites.
@@ -235,15 +245,17 @@
 
     <!-- Download Section -->
     <section class="px-8 md:px-12">
-      <h2 class="text-2xl font-medium my-6">Download the extension</h2>
-      <p class="mb-6 md:max-w-3xl mx-auto">
+      <h2 class="text-2xl font-medium my-6 md:text-3xl">
+        Download the extension
+      </h2>
+      <p class="mb-6 md:max-w-2xl mx-auto">
         We’ve got more browsers in the pipeline. Please do let us know if you’ve
         got a favourite you’d like us to prioritize.
       </p>
       <div
         class="cards-download flex flex-col items-center md:justify-center md:flex-row"
       >
-        <div class="download-card my-10 md:mx-6">
+        <div class="download-card shadow-lg shadow-indigo-500/40 my-10 md:mx-6">
           <div class="card-content">
             <img src="/images/logo-chrome.svg" alt="" />
             <h3 class="text-xl font-medium my-6">Add to Chrome</h3>
@@ -251,7 +263,7 @@
           </div>
 
           <div class="button-wrapper">
-            <button>Add & Install Extension</button>
+            <button class="blue-btn">Add & Install Extension</button>
           </div>
         </div>
         <div class="download-card my-10 md:mx-6">
@@ -262,37 +274,45 @@
           </div>
 
           <div class="button-wrapper">
-            <button>Add & Install Extension</button>
+            <button class="blue-btn">Add & Install Extension</button>
           </div>
         </div>
         <div class="download-card my-10 md:mx-6">
           <div class="card-content">
             <img src="/images/logo-opera.svg" alt="" />
-            <h3>Add to Opera</h3>
-            <p>Minimum version 46</p>
+            <h3 class="text-xl font-medium my-6">Add to Firefox</h3>
+            <p>Minimum version 55</p>
           </div>
 
           <div class="button-wrapper">
-            <button>Add & Install Extension</button>
+            <button class="blue-btn">Add & Install Extension</button>
           </div>
         </div>
       </div>
     </section>
     <!-- End Download -->
     <!-- FAQ Section -->
-    <section class="px-8 md:max-w-3xl mx-auto">
-      <h2 class="font-medium text-2xl mt-20 mb-8">
+    <section class="px-8 md:max-w-2xl mx-auto">
+      <h2 class="font-medium text-3xl mt-20 mb-8">
         Frequently Asked Questions
       </h2>
       <p class="mb-15">
         Here are some of our FAQs. If you have any other questions you’d like
         answered please feel free to email us.
       </p>
-      <div class="accordion">
+      <div class="accordion my-20">
         <div class="accordion-item">
-          <div class="accordion-header flex justify-between py-5 border-b">
-            <h3 class="font-medium">What is a Bookmark?</h3>
-            <img src="./images/icon-arrow.svg" alt="arrow" class="arrow" />
+          <div
+            class="accordion-header flex justify-between py-5 border-y items-center"
+          >
+            <h3 class="font-medium red-text-hover">What is a Bookmark?</h3>
+            <div class="w-6">
+              <img
+                src="./images/icon-arrow.svg"
+                alt="arrow"
+                class="arrow w-full"
+              />
+            </div>
           </div>
           <div class="accordion-content py-6">
             <p class="answer">
@@ -303,9 +323,19 @@
           </div>
         </div>
         <div class="accordion-item">
-          <div class="accordion-header flex justify-between py-5 border-b">
-            <h3 class="font-medium">How can I request a new browser?</h3>
-            <img src="./images/icon-arrow.svg" alt="arrow" class="arrow" />
+          <div
+            class="accordion-header flex justify-between py-5 border-b items-center"
+          >
+            <h3 class="font-medium red-text-hover">
+              How can I request a new browser?
+            </h3>
+            <div class="w-6">
+              <img
+                src="./images/icon-arrow.svg"
+                alt="arrow"
+                class="arrow w-full"
+              />
+            </div>
           </div>
           <div class="accordion-content py-6">
             <p class="answer">
@@ -319,9 +349,17 @@
           </div>
         </div>
         <div class="accordion-item">
-          <div class="accordion-header flex justify-between py-5 border-b">
-            <h3 class="font-medium">Is there a mobile app?</h3>
-            <img src="./images/icon-arrow.svg" alt="arrow" class="arrow" />
+          <div
+            class="accordion-header flex justify-between py-5 border-b items-center"
+          >
+            <h3 class="font-medium red-text-hover">Is there a mobile app?</h3>
+            <div class="w-6">
+              <img
+                src="./images/icon-arrow.svg"
+                alt="arrow"
+                class="arrow w-full"
+              />
+            </div>
           </div>
           <div class="accordion-content py-6">
             <p class="answer">
@@ -333,9 +371,19 @@
           </div>
         </div>
         <div class="accordion-item mb-14">
-          <div class="accordion-header flex justify-between py-5 border-b">
-            <h3 class="font-medium">What about other Chromium browsers?</h3>
-            <img src="./images/icon-arrow.svg" alt="arrow" class="arrow" />
+          <div
+            class="accordion-header flex justify-between py-5 border-b items-center"
+          >
+            <h3 class="font-medium red-text-hover">
+              What about other Chromium browsers?
+            </h3>
+            <div class="w-6">
+              <img
+                src="./images/icon-arrow.svg"
+                alt="arrow"
+                class="arrow w-full"
+              />
+            </div>
           </div>
           <div class="accordion-content py-6">
             <p class="answer">
@@ -346,7 +394,9 @@
           </div>
         </div>
 
-        <button class="bg-soft-blue text-white rounded py-3 px-5 mb-24">
+        <button
+          class="bg-soft-blue text-white rounded py-3 px-5 mb-24 shadow-md"
+        >
           More Info
         </button>
       </div>
@@ -405,13 +455,13 @@
             </svg>
             <div class="py-8 md:flex md:p-0">
               <li class="py-4 text-white uppercase mx-8">
-                <a href="">Features</a>
+                <a href="#features">Features</a>
               </li>
               <li class="py-4 text-white uppercase mx-8">
                 <a href="">Pricing</a>
               </li>
               <li class="py-4 text-white uppercase mx-8">
-                <a href="">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </div>
           </ul>
