@@ -3,5 +3,7 @@
 - Download Section: [x]
 - Fix Button on Hero: [x]
 - Desktop layout: [x]
+- Add favicon: []
+- Add form validation on email: [ ]
 - Fix SVGs: [ ]
 - Add animations: [ ]
