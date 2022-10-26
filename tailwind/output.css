@@ -690,8 +690,8 @@ video {
   margin-bottom: 3.5rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
@@ -756,10 +756,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-y-16 {
-  row-gap: 4rem;
 }
 
 .overflow-hidden {
@@ -1004,6 +1000,10 @@ h1,h2,h3{
   color: var(--very-dark-blue);
 }
 
+section{
+  visibility: hidden;
+}
+
 .red-text-hover:hover{
   color: var(--soft-red);
 }
@@ -1066,6 +1066,10 @@ a:hover{
 
 #menuLogo.on-dark:nth-child(1) circle{
   fill: #fff;
+}
+
+.hero-content{
+  visibility: hidden;
 }
 
 .tab{
@@ -1134,6 +1138,11 @@ a:hover{
   display: block;
 }
 
+#emailErrorMessage{
+  background-color: var(--soft-red);
+  color: #fff;
+}
+
 @media screen and (max-width: 768px){
   html{
     font-size: 15px;
@@ -1152,16 +1161,6 @@ a:hover{
 
 .hover\:opacity-100:hover {
   opacity: 1;
-}
-
-@media (min-width: 640px) {
-  .sm\:mt-8 {
-    margin-top: 2rem;
-  }
-
-  .sm\:mb-8 {
-    margin-bottom: 2rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1209,6 +1208,10 @@ a:hover{
     margin-right: auto;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:mt-20 {
     margin-top: 5rem;
   }
@@ -1219,10 +1222,6 @@ a:hover{
 
   .md\:mr-8 {
     margin-right: 2rem;
-  }
-
-  .md\:mb-0 {
-    margin-bottom: 0px;
   }
 
   .md\:flex {

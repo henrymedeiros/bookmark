@@ -29,6 +29,10 @@ h1,h2,h3{
     color: var(--very-dark-blue);
 }
 
+section{
+    visibility: hidden;
+}
+
 .red-text-hover:hover{
     color: var(--soft-red);
 }
@@ -94,7 +98,9 @@ a:hover{
     fill: #fff;
 }
 
-
+.hero-content{
+    visibility: hidden;;
+}
 
 .tab{
     cursor: pointer;
@@ -165,6 +171,11 @@ a:hover{
 
 .accordion-content.active{
     display: block;
+}
+
+#emailErrorMessage{
+    background-color: var(--soft-red);
+    color: #fff;
 }
 
 @media screen and (max-width: 768px){
