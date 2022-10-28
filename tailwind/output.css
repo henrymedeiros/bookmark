@@ -758,10 +758,6 @@ video {
   justify-content: space-between;
 }
 
-.overflow-hidden {
-  overflow: hidden;
-}
-
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1000,10 +996,6 @@ h1,h2,h3{
   color: var(--very-dark-blue);
 }
 
-section{
-  visibility: hidden;
-}
-
 .red-text-hover:hover{
   color: var(--soft-red);
 }
@@ -1046,6 +1038,17 @@ a:hover{
   height: calc(100vh - 80px);
 }
 
+.animate{
+  visibility: hidden;
+}
+
+.hero-bg{
+  height: calc(100vh - 80px);
+  background: url('/images/bg-hero.jpg') right/auto;
+  visibility: visible !important;
+  margin-top: -50%;
+}
+
 #hero > div.hero-content.px-8.md\:px-0.md\:text-left > div > a:nth-child(2) > button{
   background-color: rgb(247, 247, 247);
   color: var(--very-dark-blue);
@@ -1066,10 +1069,6 @@ a:hover{
 
 #menuLogo.on-dark:nth-child(1) circle{
   fill: #fff;
-}
-
-.hero-content{
-  visibility: hidden;
 }
 
 .tab{

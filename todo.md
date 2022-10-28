@@ -5,5 +5,5 @@
 - Desktop layout: [x]
 - Add favicon: [x]
 - Add form validation on email: [x]
-- Add animations: [ ]
+- Add animations: [x]
 - Fix SVGs: [ ]

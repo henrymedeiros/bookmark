@@ -29,9 +29,8 @@ h1,h2,h3{
     color: var(--very-dark-blue);
 }
 
-section{
-    visibility: hidden;
-}
+
+
 
 .red-text-hover:hover{
     color: var(--soft-red);
@@ -73,6 +72,18 @@ a:hover{
 
 #hero{
     height: calc(100vh - 80px);
+   
+}
+
+.animate{
+    visibility: hidden;
+}
+
+.hero-bg{
+    height: calc(100vh - 80px);
+    background: url('/images/bg-hero.jpg') right/auto;
+    visibility: visible !important;
+    margin-top: -50%;
 }
 
 #hero > div.hero-content.px-8.md\:px-0.md\:text-left > div > a:nth-child(2) > button{
@@ -98,9 +109,7 @@ a:hover{
     fill: #fff;
 }
 
-.hero-content{
-    visibility: hidden;;
-}
+
 
 .tab{
     cursor: pointer;

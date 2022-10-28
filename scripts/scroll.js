@@ -10,7 +10,7 @@ sr.reveal(".hero-image", {
   origin: "right",
   distance: "150px",
 });
-sr.reveal("section", {
+sr.reveal(".animate", {
   duration: 1500,
 });
 
@@ -28,4 +28,13 @@ sr.reveal(".opera", {
   duration: 3000,
   origin: "top",
   distance: "100px",
+});
+sr.reveal(".animate.delay-1", {
+  delay: 300,
+});
+sr.reveal(".animate.delay-2", {
+  delay: 600,
+});
+sr.reveal(".animate.delay-3", {
+  delay: 900,
 });
