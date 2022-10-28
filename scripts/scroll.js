@@ -38,3 +38,9 @@ sr.reveal(".animate.delay-2", {
 sr.reveal(".animate.delay-3", {
   delay: 900,
 });
+sr.reveal(".animate.delay-4", {
+  delay: 1200,
+});
+sr.reveal(".animate.delay-5", {
+  delay: 1500,
+});

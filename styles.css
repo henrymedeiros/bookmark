@@ -31,6 +31,9 @@ h1,h2,h3{
 
 
 
+.animate{
+    visibility: hidden;
+}
 
 .red-text-hover:hover{
     color: var(--soft-red);
@@ -75,16 +78,24 @@ a:hover{
    
 }
 
-.animate{
-    visibility: hidden;
+
+.rectangle{
+    position: absolute;
+    width: 36.66%;
+    transform: translateY(-50%);
 }
 
-.hero-bg{
-    height: calc(100vh - 80px);
-    background: url('/images/bg-hero.jpg') right/auto;
-    visibility: visible !important;
-    margin-top: -50%;
+.rectangle.hero{
+    right: 0;
+    top: 65%;
 }
+.rectangle.feat{
+    left: 0;
+    top: calc(100vh - 80px + 65%);
+    transform: scaleX(-1);
+}
+
+
 
 #hero > div.hero-content.px-8.md\:px-0.md\:text-left > div > a:nth-child(2) > button{
     background-color: rgb(247, 247, 247);

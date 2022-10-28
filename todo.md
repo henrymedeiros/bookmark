@@ -6,4 +6,6 @@
 - Add favicon: [x]
 - Add form validation on email: [x]
 - Add animations: [x]
+- Fix Warnings: []
+- Fix styles (use solutions): []
 - Fix SVGs: [ ]
