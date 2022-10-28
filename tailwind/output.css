@@ -860,11 +860,6 @@ video {
   padding-bottom: 4rem;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -975,7 +970,7 @@ video {
   --soft-blue: hsl(231, 69%, 60%);
   --soft-red: hsl(0, 94%, 66%);
   --very-dark-blue: #252b46;
-  --grayish-blue: hsl(229, 8%, 60%);
+  --grayish-blue: #9194a1;
 }
 
 html{
@@ -987,7 +982,6 @@ body{
 }
 
 p{
-  font-weight: 500;
   color: var(--grayish-blue) !important;
 }
 
@@ -1055,7 +1049,7 @@ a:hover{
 
 .rectangle.feat{
   left: 0;
-  top: calc(100vh - 80px + 65%);
+  top: calc(100vh - 80px + 55%);
   transform: scaleX(-1);
 }
 
