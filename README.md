@@ -2,7 +2,9 @@
 
 This is a solution to the [Bookmark landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-<h2 align="center"><a href="">Visit the project page</a></h2>
+<img src="https://i.imgur.com/HkrnnNU.jpeg">
+
+<h2 align="center"><a href="henrymedeiros.github.io/bookmark/">Visit the project page</a></h2>
 
 ## Table of contents
 
