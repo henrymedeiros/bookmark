@@ -4,9 +4,9 @@ This is a solution to the [Bookmark landing page challenge on Frontend Mentor](h
 
 <img src="https://i.imgur.com/HkrnnNU.jpeg">
 
-<h2 align="center"><a href="henrymedeiros.github.io/bookmark/">Visit the project page</a></h2>
+<h1 align="center"> <a href="[henrymedeiros.github.io/bookmark/](https://henrymedeiros.github.io/bookmark/)">:red_circle: Visit the project page! :red_circle:</a></h2>
 
-## Table of contents
+## :page_facing_up: Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
@@ -41,12 +41,13 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width=24/> Semantic HTML5 markup 
+-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" width=24/> CSS3 
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width=24/> [Tailwind CSS](https://tailwindcss.com/) 
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [Tailwind CSS](https://tailwindcss.com/) - For styles
+
 
 ### What I learned
 
